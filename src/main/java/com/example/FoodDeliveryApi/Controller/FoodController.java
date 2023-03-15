@@ -50,7 +50,7 @@ public class FoodController {
     }
 
     @DeleteMapping("/admin/{user_id}/delete_food/{food_id}")
-    public ResponseEntity<String> deleteUser(@PathVariable int user_id, @PathVariable int food_id){
+    public ResponseEntity<String> deleteFood(@PathVariable int user_id, @PathVariable int food_id){
 
         this.foodService.deleteFood(user_id,food_id);
         return new ResponseEntity<>("Deleted", HttpStatus.NO_CONTENT);
