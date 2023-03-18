@@ -14,7 +14,7 @@
 	<name>FoodDeliveryApi</name>
 	<description>MCT-4</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>19</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,6 +70,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<executable>true
+					</executable>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
